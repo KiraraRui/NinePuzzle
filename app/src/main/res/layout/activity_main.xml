@@ -17,9 +17,10 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
         android:text="Drag and Drop puzzle"
         android:textColor="#FFFFFF"
-        android:textSize="30dp" />
+        android:textSize="35dp" />
 
     <TextView
         android:id="@+id/textView2"
@@ -29,7 +30,7 @@
         android:layout_centerHorizontal="true"
         android:text="Can u solve it?"
         android:textColor="#8B9CD5"
-        android:textSize="30dp" />
+        android:textSize="35dp" />
 
     <GridLayout
         android:layout_width="wrap_content"
@@ -42,7 +43,7 @@
         android:layout_alignParentBottom="true"
         android:layout_marginStart="30dp"
         android:layout_marginLeft="30dp"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="70dp"
         android:layout_marginEnd="30dp"
         android:layout_marginRight="30dp"
         android:layout_marginBottom="200dp"
@@ -54,7 +55,8 @@
             android:layout_height="100dp"
             android:layout_row="0"
             android:layout_column="0"
-            android:scaleType="fitCenter" />
+            android:scaleType="fitCenter"
+            android:background="@drawable/Tile1"/>
 
         <ImageView
             android:id="@+id/imageView2"
@@ -62,7 +64,8 @@
             android:layout_height="100dp"
             android:layout_row="0"
             android:layout_column="1"
-            android:scaleType="fitCenter" />
+            android:scaleType="fitCenter"
+            android:background="@drawable/Tile2"/>
 
         <ImageView
             android:id="@+id/imageView3"
@@ -70,7 +73,8 @@
             android:layout_height="100dp"
             android:layout_row="0"
             android:layout_column="2"
-            android:scaleType="fitCenter" />
+            android:scaleType="fitCenter"
+            android:background="@drawable/Tile3"/>
 
         <ImageView
             android:id="@+id/imageView4"
@@ -78,7 +82,8 @@
             android:layout_height="100dp"
             android:layout_row="1"
             android:layout_column="0"
-            android:scaleType="fitCenter" />
+            android:scaleType="fitCenter"
+            android:background="@drawable/Tile4"/>
 
         <ImageView
             android:id="@+id/imageView5"
@@ -86,7 +91,8 @@
             android:layout_height="100dp"
             android:layout_row="1"
             android:layout_column="1"
-            android:scaleType="fitCenter" />
+            android:scaleType="fitCenter"
+            android:background="@drawable/Tile5"/>
 
         <ImageView
             android:id="@+id/imageView6"
@@ -94,7 +100,8 @@
             android:layout_height="100dp"
             android:layout_row="1"
             android:layout_column="2"
-            android:scaleType="fitCenter" />
+            android:scaleType="fitCenter"
+            android:background="@drawable/Tile6"/>
 
 
         <ImageView
@@ -103,7 +110,8 @@
             android:layout_height="100dp"
             android:layout_row="2"
             android:layout_column="0"
-            android:scaleType="fitCenter" />
+            android:scaleType="fitCenter"
+            android:background="@drawable/Tile7"/>
 
         <ImageView
             android:id="@+id/imageView8"
@@ -111,7 +119,8 @@
             android:layout_height="100dp"
             android:layout_row="2"
             android:layout_column="1"
-            android:scaleType="fitCenter" />
+            android:scaleType="fitCenter"
+            android:background="@drawable/Tile8"/>
 
         <ImageView
             android:id="@+id/imageView9"
@@ -119,8 +128,8 @@
             android:layout_height="100dp"
             android:layout_row="2"
             android:layout_column="2"
-            android:backgroundTint="@color/black"
-            android:scaleType="fitCenter" />
+            android:scaleType="fitCenter"
+            android:background="@drawable/TileEmpty"/>
     </GridLayout>
 
     <ImageButton
