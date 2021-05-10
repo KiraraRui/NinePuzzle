@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.example.ninepuzzle.dragAndDropListener xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/grid"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/my_background"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"></com.example.ninepuzzle.dragAndDropListener>
+
+<!--
 
     <TextView
         android:id="@+id/textView"
@@ -48,6 +47,7 @@
         android:layout_marginRight="30dp"
         android:layout_marginBottom="200dp"
         android:padding="10dp">
+
 
        <ImageView
             android:id="@+id/imageView1"
@@ -139,7 +139,10 @@
             android:scaleType="fitCenter"
             android:background="@drawable/empty"
             android:contentDescription="@string/todo" />
+
     </GridLayout>
+
+
 
     <ImageButton
         android:layout_width="150dp"
@@ -168,3 +171,4 @@
         android:contentDescription="@string/todo" />
 
 </RelativeLayout>
+-->

@@ -8,7 +8,7 @@ import android.widget.Button;
 import java.util.ArrayList;
 
 
-public class myBoardPresenter {
+public class myBoardPresenter extends BaseAdapter{
     private ArrayList<Button> mButtons = null;
     private int mColumnWidth, mColumnHeight;
 

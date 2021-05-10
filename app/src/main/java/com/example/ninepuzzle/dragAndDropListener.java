@@ -8,7 +8,7 @@ import android.view.GestureDetector;
 import android.view.MotionEvent;
 import android.widget.GridView;
 
-public class dragAndDropListener {
+public class dragAndDropListener extends GridView {
     private GestureDetector gDetector;
     private boolean mFlingConfirmed = false;
     private float mTouchX;

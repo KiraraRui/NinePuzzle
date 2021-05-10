@@ -7,13 +7,12 @@ import android.os.Bundle;
 import android.view.ViewTreeObserver;
 import android.widget.Button;
 import android.widget.Toast;
-
 import java.util.ArrayList;
 import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
 
-    private dragAndDropListener mGridView;
+    private static dragAndDropListener mGridView;
 
     private static final int COLUMNS = 3;
     private static final int DIMENSIONS = COLUMNS * COLUMNS;
@@ -33,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         init();
-        scramble();
+        shuffle();
         setDimensions();
     }
 
@@ -48,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
             }
         }
 
-        private void scramble() {
+        private void shuffle() {
             int index;
             String temp;
             Random random = new Random();
@@ -117,7 +116,7 @@ public class MainActivity extends AppCompatActivity {
                 else if (tileList[i].equals("7"))
                     button.setBackgroundResource(R.drawable.eight);
                 else if (tileList[i].equals("8"))
-                    button.setBackgroundResource(R.drawable.nine);
+                    button.setBackgroundResource(R.drawable.empty);
 
                 buttons.add(button);
             }
@@ -214,4 +213,3 @@ public class MainActivity extends AppCompatActivity {
             return solved;
         }
     }
-}
