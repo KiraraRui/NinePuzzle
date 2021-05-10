@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">NinePuzzle</string>
+    <string name="btn_NameDan">start</string>
+    <string name="btn_NameEng">restart</string>
+    <string name="text">Drag and Drop puzzle</string>
+    <string name="text2">Can u solve it?</string>
+    <string name="todo">TODO</string>
+
 </resources>
