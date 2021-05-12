@@ -60,7 +60,8 @@ public class MainActivity extends AppCompatActivity {
             }
         }
 
-        private void setDimensions() {
+    //OnGlobalLayoutListener = Interface definition for a callback to be invoked when the global layout state or the visibility of views within the view tree changes.
+    private void setDimensions() {
             ViewTreeObserver vto = mGridView.getViewTreeObserver();
             vto.addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
                 @Override
@@ -198,6 +199,7 @@ public class MainActivity extends AppCompatActivity {
             }
         }
 
+        //checks if the "puzzle" has been solved.
         private static boolean isSolved() {
             boolean solved = false;
 
